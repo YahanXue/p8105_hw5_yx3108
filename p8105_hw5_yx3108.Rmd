@@ -188,12 +188,6 @@ mean_results |>
   ) +
   theme_minimal()
 
-power_results = sim_results |>
-  group_by(true_mu) |>
-  summarize(
-    power = mean(p.value < 0.05),
-    .groups = "drop"
-  )
 ```
 
 (1)As the effect size increases, the power also increases. Larger effects are more likely to be detected.
