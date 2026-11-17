@@ -11,7 +11,7 @@ library(broom)
 
 set.seed(123)
 
-
+## Problem 1
 birthday_sim = function(n) {
   birthdays = sample(1:365, size = n, replace = TRUE)
 
@@ -45,7 +45,7 @@ birthday_results |>
 The probability of sharing a birthday increases as group size increases. With around 23 people, the probability is approximately 50%. For larger groups, the probability approaches 1.
 
 ```{r}
-
+## Problem 2
 longitudinal_df = tibble(
   file_name = list.files(
     path = "data",
@@ -109,7 +109,7 @@ The experimental group generally shows an increasing trend over time, while the 
 
 
 ```{r}
-
+## Problem 3
 sim_t_test = function(mu) {
 
   sim_data = rnorm(
